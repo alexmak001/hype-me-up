@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              border: 'hsl(217, 33%, 17%)',
+              input: 'hsl(217, 33%, 22%)',
+              ring: 'hsl(217, 91%, 60%)',
+              background: 'hsl(222, 84%, 5%)',
+              foreground: 'hsl(210, 40%, 98%)',
+              primary: {
+                DEFAULT: 'hsl(210, 40%, 98%)',
+                foreground: 'hsl(222, 47%, 11%)',
+              },
+              secondary: {
+                DEFAULT: 'hsl(217, 33%, 17%)',
+                foreground: 'hsl(210, 40%, 98%)',
+              },
+              destructive: {
+                DEFAULT: 'hsl(0, 63%, 31%)',
+                foreground: 'hsl(210, 40%, 98%)',
+              },
+              muted: {
+                DEFAULT: 'hsl(217, 33%, 17%)',
+                foreground: 'hsl(215, 20%, 65%)',
+              },
+              accent: {
+                DEFAULT: 'hsl(217, 33%, 17%)',
+                foreground: 'hsl(210, 40%, 98%)',
+              },
+              popover: {
+                DEFAULT: 'hsl(222, 84%, 5%)',
+                foreground: 'hsl(210, 40%, 98%)',
+              },
+              card: {
+                DEFAULT: 'hsl(222, 84%, 5%)',
+                foreground: 'hsl(210, 40%, 98%)',
+              },
+            },
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
